@@ -13,4 +13,5 @@
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value=""/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="test04"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="test04"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--module-path=&quot;C:\javafx-sdk-11.0.2\lib&quot;&#13;&#10;--add-modules=javafx.controls,javafx.fxml"/>
 </launchConfiguration>
