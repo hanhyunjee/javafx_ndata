@@ -28,7 +28,7 @@ public class RootController implements Initializable{
 	public void initialize(URL location, ResourceBundle resources) {
 		group.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
 			public void changed(ObservableValue<? extends Toggle> observable, Toggle oldValue, Toggle newValue) {
-				Image image = new Image(getClass().getResource("images/"+newValue.getUserData().toString()+".png").toString());
+				Image image = new Image(getClass().getResource("img/"+newValue.getUserData().toString()+".png").toString());
 				radioImageView.setImage(image);
 			}
 		});
@@ -36,13 +36,16 @@ public class RootController implements Initializable{
 	public void handleChkAction(ActionEvent e) {
 		if(chk1.isSelected()&&chk2.isSelected()) {
 			checkImageView.setImage(new Image(
-					getClass().getResource("images/geek-glasses-hair.gif").toString()));
+					getClass().getResource("img/geek-glasses.gif").toString()));
 		} else if(chk1.isSelected()) {
 			checkImageView.setImage(new Image(
-					getClass().getResource("images/geek-glasses.gif").toString()));
+					getClass().getResource("img/geek-glasses.gif").toString()));
 		} else if (chk2.isSelected()) {
 			checkImageView.setImage(new Image(
-					getClass().getResource("images/geek-hair.gif").toString()));
+					getClass().getResource("img/geek-hair.gif").toString()));
+		} else {
+			checkImageView.setImage(new Image(
+					getClass().getResource("img/geek.gif").toString()));
 		}
 	} 
 	public void handleBtnExitAction(ActionEvent e) {
