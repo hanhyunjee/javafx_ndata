@@ -15,6 +15,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class RootController implements Initializable{
@@ -59,7 +60,7 @@ public class RootController implements Initializable{
 					public void changed(ObservableValue<? extends Phone> observable, Phone oldValue, Phone newValue){
 						if(newValue!=null){
 							imageView.setImage(new Image(
-									getClass().getResource("images/"+newValue.getImage()).toString)));
+									getClass().getResource("images/"+ newValue.getImage()).toString()));
 						}
 					}
 				}
